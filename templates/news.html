@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ block.super }}: News
+{% endblock title %}
+
+{% block content %}
+        <hl>RiffMates News</hlhl>
+        <ul>
+             {% for item in news %}
+                <li>{{ intem }}</li>
+             {% endfor %}
+        </ul>
+        <a href="{% url 'credits' %}>Credits</a>
+{% endblock content %}
